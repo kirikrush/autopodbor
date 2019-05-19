@@ -1288,9 +1288,11 @@ footer .asks ul li span:hover {
 footer .asks ul li .hidden-text {
   display: none
 }
-.adaptive-inf{
+
+.adaptive-inf {
   display: none;
 }
+
 footer .asks .more-asks {
   display: inline-block;
   font-size: 18px;
@@ -1814,7 +1816,8 @@ a.btn-menu {
   .head-menu {
     display: none
   }
-  .head-menu-mobile{
+
+  .head-menu-mobile {
     display: block !important;
     position: absolute;
     z-index: 999999999;
@@ -1827,20 +1830,23 @@ a.btn-menu {
     transition: .3s ease;
     height: 100vh;
     position: fixed;
-    background: linear-gradient(to bottom, #251026 0%,#592658 100%);
-    
+    background: linear-gradient(to bottom, #251026 0%, #592658 100%);
+
   }
-  .head-menu-mobile img{
+
+  .head-menu-mobile img {
     width: 150px;
-    margin-bottom:40px;
+    margin-bottom: 40px;
   }
-  .head-menu-mobile .social-links{
+
+  .head-menu-mobile .social-links {
     display: block;
     position: static !important;
     margin: 40px 0 0 !important;
-    
+
   }
-  .head-menu-mobile .social-links li{
+
+  .head-menu-mobile .social-links li {
     width: 50px;
     height: 50px;
     background: white;
@@ -1848,44 +1854,52 @@ a.btn-menu {
     background-position: center;
     border-radius: 100%;
   }
-  .head-menu-mobile .social-links li a.mail{
+
+  .head-menu-mobile .social-links li a.mail {
     background-image: url(./arroba-sign.png);
-     background-size: 57%;
+    background-size: 57%;
     background-position: center;
     width: 50px;
     height: 50px;
 
   }
-  .head-menu-mobile .social-links li a.inst{
+
+  .head-menu-mobile .social-links li a.inst {
     background-image: url(./instagram.png);
-     background-size: 57%;
+    background-size: 57%;
     background-position: center;
     width: 50px;
     height: 50px;
-    
+
   }
-  .head-menu-mobile .social-links li a.vk{
+
+  .head-menu-mobile .social-links li a.vk {
     background-image: url(./vk.png);
-     background-size: 57%;
+    background-size: 57%;
     background-position: center;
     width: 50px;
     height: 50px;
-    
+
   }
-  .head-menu-mobile .social-links ul{
+
+  .head-menu-mobile .social-links ul {
     flex-direction: row;
     justify-content: space-around;
   }
-  .head-menu-mobile a{
+
+  .head-menu-mobile a {
     color: #fff !important;
   }
+
   .head-menu-mobile.active {
-    
+
     left: 0
   }
-.head-menu-mobile>ul{
-  height: 100%;
-}
+
+  .head-menu-mobile>ul {
+    height: 100%;
+  }
+
   .col-auto {
     display: block
   }
@@ -2058,10 +2072,12 @@ a.btn-menu {
     flex-direction: column;
     width: 100%
   }
-  .adaptive-inf{
+
+  .adaptive-inf {
     display: block !important;
   }
-  .legal-inf{
+
+  .legal-inf {
     display: none;
   }
 }
@@ -2158,4 +2174,83 @@ img[data-src] {
   width: 80%;
   margin: 0 auto;
   display: block;
+}
+
+.adaptive-inf .item {
+  max-height: 90vh;
+
+}
+
+#left,
+#right {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  z-index: 2;
+  border-radius: 100%;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+#left{
+  left: 10px;
+}
+#right{
+  right: 10px;
+}
+.legal-slider{
+  position: relative;
+}
+.adaptive-inf .img-box {
+  position: relative;
+}
+.owl-theme .owl-controls .owl-buttons div{
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  border-radius: 100%;
+  opacity: 1;
+}
+.owl-buttons{
+  display: flex !important;
+  justify-content: space-between;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  width: 100%;
+
+}
+.owl-controls{
+  position: static !important;
+}
+.owl-prev, .owl-next{
+  background-size: 70% 70% !important;
+  background-position: center !important;
+  background-repeat:no-repeat !important;
+  background-image: url(https://image.flaticon.com/icons/svg/118/118739.svg) !important;
+}
+
+.owl-next{
+  transform: rotate(180deg)
+}
+  
+.adaptive-inf .item .img-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 99%;
+  height: 200px;
+  left: 1%;
+  bottom: 0;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
+  background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
+  /* IE6-9 */
+
 }
